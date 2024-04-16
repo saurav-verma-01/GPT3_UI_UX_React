@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+$font-family: "Manrope", sans-serif;
+
+$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+
+$gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+$color-bg: #040c18;
+$color-footer: #031b34;
+$color-blog: #042c54;
+$color-text: #81afdd;
+$color-subtext: #ff8a71;
+
+main {
+  font-family: $font-family;
+  background-color: $color-bg;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.gradient__bg {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(circle at 10% 25%, #002853 0%, #040c18 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 10% 25%,
+    #002853 0%,
+    #040c18 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 10% 25%, #002853 0%, #040c18 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 10% 25%, #002853 0%, #040c18 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 10% 25%, #002853 0%, #040c18 100%);
+}
+
+.gradient__text {
+  background: $gradient-text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem;
+  }
+}
+@media screen and (max-width: 536px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}
